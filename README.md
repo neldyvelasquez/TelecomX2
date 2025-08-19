@@ -1,10 +1,10 @@
-#  Proyecto de Análisis de Cancelación de Clientes (Churn) - TelecomX
+#  Telecom X Predicción de Cancelación
 
-Este proyecto tiene como propósito **predecir la cancelación de clientes (churn)** utilizando técnicas de análisis de datos y modelado predictivo. Se identifican las variables más influyentes en la decisión de un cliente de abandonar el servicio, y se proponen estrategias de retención basadas en los resultados obtenidos.
+Este proyecto tiene como propósito **predecir la cancelación o retiro de clientes (churn)** utilizando técnicas de análisis de datos y modelado predictivo. Se identifican las variables más influyentes en la decisión de un cliente de abandonar el servicio, y se proponen estrategias de retención basadas en los resultados obtenidos.
 
-##  Objetivo Principal
+##  Objetivo principal
 
-Desarrollar un modelo de clasificación que permita anticipar qué clientes tienen mayor probabilidad de cancelar su contrato, para que la empresa (TelecomX) pueda actuar de forma preventiva y mejorar la fidelización.
+Desarrollar un modelo de clasificación que permita anticipar qué clientes tienen mayor probabilidad de cancelar su contrato, para que la empresa (Telecom X) pueda actuar de forma preventiva y mejorar la fidelización.
 
 ##  Estructura del proyecto
 
@@ -16,27 +16,45 @@ Desarrollar un modelo de clasificación que permita anticipar qué clientes tien
 ├──  LICENSE
 ```
 
+##  Preparación y tratamiento de datos
 
-##  Ejemplos de Gráficos e Insights
+###  Clasificación de Variables
 
-### Ejemplos de visualizaciones generadas:
+- **Variables Categóricas**: Tipo_Contrato, Servicio_Internet, Metodo_Pago, Genero_Cliente y Cliente_Pareja
+- **Variables Numéricas**: Antiguedad_Meses, Cargos_Mensuales, Cargos_Totales
 
-- Distribución de churn.
-  <img width="481" height="504" alt="Untitled" src="https://github.com/user-attachments/assets/b4fee348-b64d-49af-96d5-672ad36ce888" />
+###  Procesos eealizados
 
-- Comparación de cargos mensuales entre clientes perdidos y retenidos.
-  <img width="876" height="552" alt="Untitled-1" src="https://github.com/user-attachments/assets/7d7e1334-5707-4225-90f5-d540054c9c11" />
+1. **Limpieza de datos**:
+   - Eliminación de registros con datos faltantes o inválidos.
+   - Conversión de columnas numéricas mal tipadas (ej. `Cargos_Totales`).
 
-- Antigüedad de los clientes y su relación con el churn.
-  <img width="846" height="553" alt="Untitled" src="https://github.com/user-attachments/assets/e2fe2a64-1efa-427f-9d7b-d2718e4f4920" />
+2. **Codificación**:
+   - Uso de One-Hot Encoding para variables categóricas con múltiples niveles.
+
+3. **Normalización**:
+   - Aplicación de `StandardScaler` a variables numéricas para mejorar el desempeño de modelos como KNN.
+
+4. **Separación de datos**:
+   - División en conjunto de entrenamiento (80%) y prueba (20%) utilizando `train_test_split` de `sklearn`.
+
+###  Justificaciones
+
+- Se priorizó la eliminación de ruido y escalado para asegurar la calidad del entrenamiento.
+- Se aplicaron dos modelos complementarios (KNN y Random Forest) para comparar rendimiento en distintos enfoques: proximidad vs. ensamble.
+- Se eligió `Random Forest` por su superioridad general en exactitud y precisión.
 
 
-### Insights clave:
+##  Análisis Exploratorio (EDA)
 
-- Más del **70% de los clientes han abandonado** la empresa.
-- Los **clientes nuevos**, con **cargos mensuales elevados** y sin servicios de **soporte o seguridad**, presentan mayor propensión a cancelar.
-- Los clientes con **pareja** o **dependientes** muestran **mayor fidelización**.
-- Los servicios como **Streaming** o **Múltiples líneas**, si no se acompañan de valor agregado, se relacionan con mayor pérdida.
+Durante el EDA, se generaron varias visualizaciones clave:
+
+-  **Mapa de calor de correlación**: Identificó la antigüedad, tipo de contrato y método de pago como variables clave.
+  <img width="2185" height="1978" alt="Untitled" src="https://github.com/user-attachments/assets/ba331f12-ab3d-42d8-98fe-e613d7950ae5" />
+
+-  **Relación entre antigueda y churn**: Mostró que clientes nuevos son más propensos a cancelar.
+  <img width="1189" height="490" alt="Untitled-1" src="https://github.com/user-attachments/assets/437bbaaa-a61e-4a82-8066-bf4ffb07702e" />
+  <img width="1189" height="490" alt="Untitled" src="https://github.com/user-attachments/assets/e41b8690-5558-4dcc-9981-1fd2144c32ae" />
 
 
 ##  Instrucciones para ejecutar el notebook
