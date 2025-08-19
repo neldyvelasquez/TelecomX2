@@ -54,7 +54,6 @@ Durante el EDA, se generaron varias visualizaciones clave:
 
 -  **Relación entre antigueda y churn**: Mostró que clientes nuevos son más propensos a cancelar.
   <img width="1189" height="490" alt="Untitled-1" src="https://github.com/user-attachments/assets/437bbaaa-a61e-4a82-8066-bf4ffb07702e" />
-  <img width="1189" height="490" alt="Untitled" src="https://github.com/user-attachments/assets/e41b8690-5558-4dcc-9981-1fd2144c32ae" />
 
 
 ##  Instrucciones para ejecutar el notebook
