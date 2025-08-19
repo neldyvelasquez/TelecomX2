@@ -1,22 +1,15 @@
-#  Análisis de Pérdida de Clientes – Telecom X
+#  Proyecto de Análisis de Cancelación de Clientes (Churn) - TelecomX
 
-Este repositorio contiene un análisis completo del comportamiento de pérdida de clientes (**churn**) en la empresa ficticia **Telecom X**, utilizando datos tabulares y técnicas exploratorias de ciencia de datos.
+Este proyecto tiene como propósito **predecir la cancelación de clientes (churn)** utilizando técnicas de análisis de datos y modelado predictivo. Se identifican las variables más influyentes en la decisión de un cliente de abandonar el servicio, y se proponen estrategias de retención basadas en los resultados obtenidos.
 
+##  Objetivo Principal
 
-##  Propósito del Análisis
-
-El objetivo principal de este proyecto es comprender los factores que influyen en la pérdida de clientes, con el fin de:
-
-- Identificar patrones comunes en los clientes que abandonan la compañía.
-- Descubrir características clave de los clientes fieles.
-- Ofrecer recomendaciones estratégicas basadas en datos para reducir el churn.
-- Servir como base para un futuro modelo predictivo de clientes en riesgo.
-
+Desarrollar un modelo de clasificación que permita anticipar qué clientes tienen mayor probabilidad de cancelar su contrato, para que la empresa (TelecomX) pueda actuar de forma preventiva y mejorar la fidelización.
 
 ##  Estructura del proyecto
 
 ```plaintext
- TelecomX1/
+ TelecomX2/
 │
 ├──  README.md                                 # Este archivo
 ├──  Analisis de Clientes Telecom X.ipynb      # Notebook principal con análisis y visualizaciones
