@@ -60,7 +60,7 @@ Durante el EDA, se generaron varias visualizaciones clave:
 ##  Instrucciones para ejecutar el notebook
 
 -   **Clonar el repositorio** en tu entorno local o abrirlo en [Google Colab](https://colab.research.google.com/).
--   
+  
    git clone [https://github.com/tu-usuario/alura-store-analysis.git](https://github.com/neldyvelasquez/TelecomX2.git)
    cd alura-store-analysis
 
