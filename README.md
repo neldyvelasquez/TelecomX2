@@ -14,6 +14,7 @@ Desarrollar un modelo de clasificación que permita anticipar qué clientes tien
 ├──  README.md                                      # Este archivo
 ├──  Telecom X Predicción de Cancelación.ipynb      # Notebook principal con análisis y visualizaciones
 ├──  LICENSE
+├──  datos_tratados_telecom_final.csv               # Base de datos
 ```
 
 ##  Preparación y tratamiento de datos
@@ -61,6 +62,7 @@ Durante el EDA, se generaron varias visualizaciones clave:
 -   **Clonar el repositorio** en tu entorno local o abrirlo en [Google Colab](https://colab.research.google.com/).
    git clone https://github.com/tu-usuario/alura-store-analysis.git
    cd alura-store-analysis
+-   **Descargar la base de datos** en tu entorno local y subirlo a entorno de [Google Colab](https://colab.research.google.com/).
 
 
 ##  Requisitos
