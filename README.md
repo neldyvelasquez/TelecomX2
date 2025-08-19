@@ -11,8 +11,8 @@ Desarrollar un modelo de clasificación que permita anticipar qué clientes tien
 ```plaintext
  TelecomX2/
 │
-├──  README.md                                 # Este archivo
-├──  Analisis de Clientes Telecom X.ipynb      # Notebook principal con análisis y visualizaciones
+├──  README.md                                      # Este archivo
+├──  Telecom X Predicción de Cancelación.ipynb      # Notebook principal con análisis y visualizaciones
 ├──  LICENSE
 ```
 
